@@ -1,0 +1,29 @@
+- type: constructionGraph
+  id: ImprovisedStorage
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: pouch
+          steps:
+            - tag: Rope
+              name: construction-graph-tag-rope
+              icon:
+                sprite: _ScavPrototype/Objects/Items/foilage_rope.rsi
+                state: icon
+              doAfter: 5
+            - tag: Foilage
+              name: construction-graph-tag-foilage
+              icon:
+                sprite: _ScavPrototype/Objects/Items/foilage.rsi
+                state: icon
+              doAfter: 5
+            - tag: Foilage
+              name: construction-graph-tag-foilage
+              icon:
+                sprite: _ScavPrototype/Objects/Items/foilage.rsi
+                state: icon
+              doAfter: 5
+
+    - node: pouch
+      entity: FoilagePouch

@@ -1,0 +1,28 @@
+- type: entity
+  name: листва
+  parent: BaseItem
+  description: Обычная листва, может пригодится для создание чего-то.
+  id: Foilage
+  components:
+  - type: Sprite
+    sprite: _ScavPrototype/Objects/Items/foilage.rsi
+    state: icon
+  - type: Tag
+    tags:
+    - Foilage
+
+- type: entity
+  name: верёвка
+  parent: BaseItem
+  description: Крепкая верёвка из листвы.
+  id: FoilageRope
+  components:
+  - type: Sprite
+    sprite: _ScavPrototype/Objects/Items/foilage_rope.rsi
+    state: icon
+  - type: Construction
+    graph: SpecimanObjects
+    node: rope
+  - type: Tag
+    tags:
+    - Rope

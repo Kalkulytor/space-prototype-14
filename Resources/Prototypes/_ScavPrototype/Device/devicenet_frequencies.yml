@@ -1,0 +1,4 @@
+- type: deviceFrequency
+  id: SurveillanceCameraImplant
+  name: Камеры имплантов слежения
+  frequency: 3200

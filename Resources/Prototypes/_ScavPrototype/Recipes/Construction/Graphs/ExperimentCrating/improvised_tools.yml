@@ -1,0 +1,36 @@
+- type: constructionGraph
+  id: ImprovisedTools
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: screwdriver
+          steps:
+            - material: Steel
+              amount: 2
+            - material: Plastic
+              amount: 1
+            - tag: Rope
+              name: construction-graph-tag-rope
+              icon:
+                sprite: _ScavPrototype/Objects/Items/foilage_rope.rsi
+                state: icon
+              doAfter: 5
+        - to: wirecutter
+          steps:
+            - material: Steel
+              amount: 2
+            - material: Plastic
+              amount: 2
+            - tag: Rope
+              name: construction-graph-tag-rope
+              icon:
+                sprite: _ScavPrototype/Objects/Items/foilage_rope.rsi
+                state: icon
+              doAfter: 5
+
+    - node: screwdriver
+      entity: ImprovisedScrewdriver
+
+    - node: wirecutter
+      entity: ImprovisedWirecutter

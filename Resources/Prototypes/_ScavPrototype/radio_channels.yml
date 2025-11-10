@@ -1,0 +1,7 @@
+- type: radioChannel
+  id: ImplantChannel
+  keycode: 'р'
+  name: chat-radio-implant
+  frequency: 3203
+  color: "#dddd55"
+  longRange: true

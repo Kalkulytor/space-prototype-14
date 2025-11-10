@@ -1,0 +1,54 @@
+- type: construction
+  id: SteelCraft
+  graph: SpecimanObjects
+  startNode: start
+  targetNode: steel
+  category: construction-category-speciman
+  entityWhitelist:
+    tags:
+    - SpecimanCraft
+  objectType: Item
+
+- type: construction
+  id: ImprovisedScrewdriverCraft
+  graph: ImprovisedTools
+  startNode: start
+  targetNode: screwdriver
+  category: construction-category-speciman
+  entityWhitelist:
+    tags:
+    - SpecimanCraft
+  objectType: Item
+
+- type: construction
+  id: ImprovisedWirecutterCraft
+  graph: ImprovisedTools
+  startNode: start
+  targetNode: wirecutter
+  category: construction-category-speciman
+  entityWhitelist:
+    tags:
+    - SpecimanCraft
+  objectType: Item
+
+- type: construction
+  id: FoilageRopeCraft
+  graph: SpecimanObjects
+  startNode: start
+  targetNode: rope
+  category: construction-category-speciman
+  entityWhitelist:
+    tags:
+    - SpecimanCraft
+  objectType: Item
+
+- type: construction
+  id: FoilageStorageCraft
+  graph: ImprovisedStorage
+  startNode: start
+  targetNode: pouch
+  category: construction-category-speciman
+  entityWhitelist:
+    tags:
+    - SpecimanCraft
+  objectType: Item
