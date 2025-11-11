@@ -78,6 +78,14 @@
 
 - type: entity
   parent: PartRodMetal
+  id: PartRodMetal10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: PartRodMetal
   id: PartRodMetal1
   name: metal rod
   suffix: Single

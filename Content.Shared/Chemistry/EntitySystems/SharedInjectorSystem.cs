@@ -469,7 +469,7 @@ public abstract class SharedInjectorSystem : EntitySystem
     {
         // Automatically set syringe to draw after completely draining it.
         if (SolutionContainer.ResolveSolution(injector.Owner, injector.Comp.SolutionName, ref injector.Comp.Solution,
-                out var solution) && solution.Volume == 0)
+                out var solution) && solution.Volume == 0 && !injector.Comp.InjectOnly)
         {
             SetMode(injector, InjectorToggleMode.Draw);
         }

@@ -36,7 +36,6 @@
   components:
   - type: Stack
     stackType: Paper
-    count: 10
     baseLayer: base
     layerStates:
     - paper
@@ -87,7 +86,6 @@
       Plasma: 100
   - type: Stack
     stackType: Plasma
-    count: 10
     baseLayer: base
     layerStates:
     - plasma
@@ -117,6 +115,16 @@
 
 - type: entity
   parent: SheetPlasma
+  id: SheetPlasma10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: plasma
+  - type: Stack
+    count: 10
+
+- type: entity
+  parent: SheetPlasma
   id: SheetPlasma1
   name: plasma
   suffix: Single
@@ -143,7 +151,6 @@
       Plastic: 100
   - type: Stack
     stackType: Plastic
-    count: 10
     baseLayer: base
     layerStates:
     - plastic
@@ -168,6 +175,17 @@
         - ReagentId: Phosphorus
           Quantity: 5
         canReact: false
+
+- type: entity
+  parent: SheetPlastic
+  id: SheetPlastic10
+  name: plastic
+  suffix: 10
+  components:
+  - type: Sprite
+    state: plastic
+  - type: Stack
+    count: 10
 
 - type: entity
   parent: SheetPlastic

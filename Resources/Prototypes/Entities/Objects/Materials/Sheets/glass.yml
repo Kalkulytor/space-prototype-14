@@ -60,7 +60,6 @@
       Glass: 100
   - type: Stack
     stackType: Glass
-    count: 10
     baseLayer: base
     layerStates:
     - glass
@@ -90,6 +89,17 @@
 
 - type: entity
   parent: SheetGlass
+  id: SheetGlass10
+  suffix: 10
+  components:
+  - type: Sprite
+    state: glass
+  - type: Stack
+    stackType: Glass
+    count: 10
+
+- type: entity
+  parent: SheetGlass
   id: SheetGlass1
   suffix: Single
   components:
@@ -111,7 +121,6 @@
       ReinforcedGlass: 100
   - type: Stack
     stackType: ReinforcedGlass
-    count: 10
     baseLayer: base
     layerStates:
     - rglass
@@ -192,7 +201,6 @@
       PlasmaGlass: 100
   - type: Stack
     stackType: PlasmaGlass
-    count: 10
     baseLayer: base
     layerStates:
     - pglass
@@ -268,7 +276,6 @@
       ReinforcedPlasmaGlass: 100
   - type: Stack
     stackType: ReinforcedPlasmaGlass
-    count: 10
     baseLayer: base
     layerStates:
     - rpglass
@@ -324,7 +331,6 @@
       UraniumGlass: 100
   - type: Stack
     stackType: UraniumGlass
-    count: 10
     baseLayer: base
     layerStates:
     - uglass
@@ -399,7 +405,6 @@
       ReinforcedUraniumGlass: 100
   - type: Stack
     stackType: ReinforcedUraniumGlass
-    count: 10
     baseLayer: base
     layerStates:
     - ruglass
@@ -455,7 +460,6 @@
       BrassGlass: 100
   - type: Stack
     stackType: ClockworkGlass
-    count: 10
     baseLayer: base
     layerStates:
     - cglass

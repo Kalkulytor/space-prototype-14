@@ -77,6 +77,16 @@
 
 - type: entity
   parent: SheetSteel
+  id: SheetSteel10
+  name: steel
+  suffix: 10
+  components:
+  - type: Stack
+    stackType: Steel
+    count: 10
+
+- type: entity
+  parent: SheetSteel
   id: SheetSteel1
   name: steel
   suffix: Single
@@ -179,6 +189,14 @@
         - ReagentId: Carbon
           Quantity: 1
         canReact: false
+
+- type: entity
+  parent: SheetPlasteel
+  id: SheetPlasteel10
+  suffix: 10
+  components:
+  - type: Stack
+    count: 10
 
 - type: entity
   parent: SheetPlasteel
