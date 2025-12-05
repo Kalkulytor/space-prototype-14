@@ -5,13 +5,14 @@
 
 #Asteroid rock
 - type: entity
-  id: AsteroidRock
-  parent: BaseWall
+  id: ScavAsteroidRock
+  parent: BaseStructure
   name: asteroid rock
   description: A rocky asteroid.
+  suffix: Пропускают газы
   components:
+  - type: Occluder
   - type: Transform
-    noRot: true
   - type: IconSmooth
     key: walls
     mode: NoSprite
@@ -21,6 +22,7 @@
     state: rock_asteroid
   - type: Sprite
     sprite: Structures/Walls/rock.rsi
+    drawdepth: Walls
     layers:
     - state: rock_asteroid
     - map: [ "enum.EdgeLayer.South" ]
@@ -59,6 +61,33 @@
         layer:
         - WallLayer
         density: 2000
+  - type: Anchorable
+    flags:
+    - Anchorable
+  - type: Rotatable
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MetalBulletImpact
+    soundTypes:
+      Heat:
+        collection:
+          MetalLaserImpact
+  - type: Tag
+    tags:
+    - Wall
+  - type: IsRoof
+  - type: PlacementReplacement
+    key: walls
+  - type: Physics
+    bodyType: Static
+  - type: StaticPrice
+    price: 75
+  - type: RadiationBlocker
+    resistance: 2
+  - type: BlockWeather
+  - type: SunShadowCast
 
 - type: entity
   abstract: true
@@ -147,7 +176,7 @@
 
 - type: entity
   id: AsteroidRockGold
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   description: An ore vein rich with gold.
   suffix: Gold
   components:
@@ -178,7 +207,7 @@
 
 - type: entity
   id: AsteroidRockDiamond
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   description: An ore vein rich with diamonds.
   suffix: Diamond
   components:
@@ -201,7 +230,7 @@
 
 - type: entity
   id: AsteroidRockPlasma
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   description: An ore vein rich with plasma.
   suffix: Plasma
   components:
@@ -223,7 +252,7 @@
 
 - type: entity
   id: AsteroidRockQuartz
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   description: An ore vein rich with quartz.
   suffix: Quartz
   components:
@@ -254,7 +283,7 @@
 
 - type: entity
   id: AsteroidRockSilver
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   description: An ore vein rich with silver.
   suffix: Silver
   components:
@@ -286,7 +315,7 @@
 # Yes I know it drops steel but we may get smelting at some point
 - type: entity
   id: AsteroidRockTin
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   description: An ore vein rich with iron.
   suffix: Iron
   components:
@@ -317,7 +346,7 @@
 
 - type: entity
   id: AsteroidRockUranium
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   description: An ore vein rich with uranium.
   suffix: Uranium
   components:
@@ -348,7 +377,7 @@
 
 - type: entity
   id: AsteroidRockBananium
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   description: An ore vein rich with bananium.
   suffix: Bananium
   components:
@@ -379,7 +408,7 @@
 
 - type: entity
   id: AsteroidRockSalt
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   description: An ore vein rich with salt.
   suffix: Salt
   components:
@@ -402,7 +431,7 @@
 
 - type: entity
   id: AsteroidRockArtifactFragment
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   description: A rock wall. What's that sticking out of it?
   suffix: Artifact Fragment
   components:
@@ -444,7 +473,7 @@
 
 - type: entity
   id: AsteroidRockMining
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   name: asteroid rock
   suffix: higher ore yield .33
   description: An asteroid.
@@ -455,7 +484,7 @@
 
 - type: entity
   id: IronRock
-  parent: AsteroidRock
+  parent: ScavAsteroidRock
   name: ironrock
   suffix: Low Ore Yield
   description: A rocky asteroid.
