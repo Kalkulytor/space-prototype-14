@@ -31,6 +31,12 @@
     solutions:
       steel:
         canReact: false
+  - type: Tool
+    qualities:
+      Screwing: 0.1
+    useSound:
+      collection: Screwdriver
+    speedModifier: 0.2
   - type: GuideHelp
     guides:
     - ExpandingRepairingStation
@@ -47,7 +53,6 @@
       Steel: 100
   - type: Stack
     stackType: Steel
-    count: 10
     baseLayer: base
     layerStates:
     - steel
@@ -162,7 +167,6 @@
       Plasteel: 100
   - type: Stack
     stackType: Plasteel
-    count: 10
     baseLayer: base
     layerStates:
     - plasteel

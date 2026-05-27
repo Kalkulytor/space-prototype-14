@@ -23,6 +23,17 @@
     - Vulpkanin
     - Tajaran
     #Corvax-Species-End
+    #ScavPrototype-Species
+    - Orange
+    - Dune
+    - Velvet
+    - Roza
+    - Speciman
+    - Albino
+    - Voyager
+    - BoldMilky
+    - Milky
+    - Expilky
 
 - type: loadoutEffectGroup
   id: EffectSpeciesVox
@@ -85,6 +96,17 @@
     - CorvaxVulpkanin
     - Tajaran
     #Corvax-Species-End
+    #ScavPrototype-Species
+    - Orange
+    - Dune
+    - Velvet
+    - Roza
+    - Speciman
+    - Albino
+    - Voyager
+    - BoldMilky
+    - Milky
+    - Expilky
 
 - type: loadoutEffectGroup
   id: OxygenBreatherMimeMoth
